@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chewy&family=Familjen+Grotesk:wght@656&family=Itim&family=Press+Start+2P&family=Righteous&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+
+    --nav-background:rgb(18, 29, 51);
+    --link--color:rgb(204, 210, 222);
+    --list-hover:rgba(255, 255, 255, 0.1);
+}
+
+body{
+    background:#fff;
+
+    font-family: "Familjen Grotesk", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+
+/* ==========================  */
+     /* ====( navabar )==== */
+/* ========================== */
+
+
+
+/* ---------nav----------- */
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    background: var(--nav-background);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+/* ---------------------- */
+
+
+
+
+/* ---------logo------ */
+
+.logo img{
+    width: 32px;
+    margin-left: 16%;
+    margin-top: 1%;
+  cursor: pointer;
+}
+
+.logo h2{
+    font-size: 28px;
+    color: #fff;
+    margin-left: 18%;
+    position: absolute;
+    margin-top: -2%;
+    cursor: pointer;
+}
+
+.logo span{
+    color: rgb(204, 210, 222);
+}
+
+/* ------------------- */
+
+
+/* ----nav-links------ */
+
+.nav-links{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    color: var(--link--color);
+    margin-left: 29%;
+    list-style: none;
+    margin-top: -35px;
+}
+
+.nav-item{
+    cursor: pointer;
+    margin-left: 22px;
+    padding: 6px;
+    padding-left:10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+/* animation in hover */
+
+.nav-item:hover{
+    color: #fff;
+    background-color: var(--list-hover) ;
+}
+
+/* dots */
+
+.dots i{
+    font-size: 20px;
+    color: #fff;
+}
+
+/* ----------------- */
+
+
+/* ------icons------ */
+
+/* search button */
+
+.search-btn{
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    margin-left: 68%;
+    margin-top: -2%;
+    cursor: pointer;
+}
+
+.search-btn i{
+    padding: 14px;
+    border-radius: 50%;
+    background-color: var(--list-hover);
+    transition: 0.5s ease-in-out;
+}
+
+/* hover animate */
+
+.search-btn i:hover{
+    background:  rgb(121, 122, 123);;
+}
+
+
+/* ---login-btn-- */
+
+.login-btn{
+    position: absolute;
+    margin-left: 72%;
+    margin-top: -2%;
+    font-size: 18px;
+    color: #fff;
+    width: 75px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+/* hover */
+
+.login-btn:hover{
+    border-color: var(--link--color);
+    color: var(--link--color);
+}
+
+
+/* ---sign-up---- */
+
+.signup-btn{
+
+    position:absolute;
+    color: var(--nav-background);
+    background: #fff;
+    margin-left: 77%;
+    margin-top: -2%;
+    width: 80px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+
+}
+
+.signup-btn:hover{
+    background: var(--link--color);
+}
+
+
+/* ----------------- */
+/* ==========================  */
+
+
+
+
+/* ==========================  */
+  /* ====( home texts )==== */
+/* ========================== */
+
+
+/* background */
+
+.home{
+    position: relative;
+    width: 100%;
+    height:60vh;
+    left: 0;
+    background: url('./images/homebackground.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+/* ----------- */
+
+
+/* contents - container */
+
+.content{
+    width: 80vh;
+    height: 70%;
+    margin-left: 23%;
+    position: relative;
+}
+
+/* ----------- */
+
+
+.texts{
+    margin-top: 20%;
+    position: absolute;
+}
+
+
+.texts h1{
+    font-size: 55px;
+    color: #fff;
+}
+
+.texts h4{
+    margin-top: 30px;
+    font-size: 27px;
+    color: #fff;
+}
+
+.mail-section{
+    position: absolute;
+    margin-top: 45%;
+}
+
+.mail-section input{
+    width: 40vh;
+    height: 50px;
+    border-radius: 10px;
+    background:  rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 15px;
+}
+
+.mail-section input::placeholder{
+    color: #fff;
+    padding-left: 15px;
+}
+
+
+.mail-section .sign-btn{
+    position:absolute;
+    color: rgb(12, 108, 242);
+    background: #fff;
+    margin-left:7%;
+    width: 100px;
+    height: 48px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    text-align: center;
+}
+
+.mail-section .sign-btn:hover{
+    background: var(--link--color);
+}
+
+
+/* ==========================  */
