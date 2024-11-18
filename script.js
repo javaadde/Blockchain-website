@@ -100,3 +100,59 @@
       
 
   }
+
+
+
+
+
+
+
+
+  function changeURL_EX(buttonId) {
+    const imageMap = {
+      EXclick1: './images/backdrops/exploor-image-1.png',
+      EXclick2: './images/backdrops/exploor-image-2.png',
+      EXclick3: './images/backdrops/exploor-image-3.png',
+      EXclick4: './images/backdrops/exploor-image-4.png'
+    };
+
+
+    const imageElement = document.getElementById('EXmainImage');
+
+
+    if (buttonId in imageMap) {
+     
+      imageElement.style.opacity = 0;
+
+      
+      setTimeout(() => {
+        imageElement.src = imageMap[buttonId];
+      
+        imageElement.onload = () => {
+          imageElement.style.opacity = 1;
+        };
+      }, 500); 
+    }
+
+
+
+    const elements = document.querySelectorAll('p[id^="EXclick"]');
+
+
+    elements.forEach(el => {
+        if (el.id !== buttonId) {
+          el.style.display = 'none'; // Hide all other elements
+        }
+      });
+
+
+        const element = document.getElementById(buttonId);
+
+       
+        
+        if (element) {
+            element.style.display = element.style.display === 'flex' ? 'none' : 'flex';
+          }
+      
+
+  }
