@@ -50,7 +50,10 @@ body{
     height: 80px;
     background: var(--nav-background);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 13;
 }
 
 /* ---------------------- */
@@ -62,19 +65,19 @@ body{
 
 .logo img{
     width: 32px;
-    margin-left: 16%;
+    margin-left: 17%;
     margin-top: 1%;
   cursor: pointer;
 }
 
 .logo h2{
-    font-size: 28px;
+    font-size: 25px;
     color: #fff;
-    margin-left: 18%;
+    margin-left: 19%;
     position: absolute;
-    margin-top: -2%;
+    margin-top: -1.8%;
     cursor: pointer;
-
+   
    
 }
 
@@ -112,6 +115,9 @@ body{
 .nav-item:hover{
     color: #fff;
     background-color: var(--list-hover) ;
+    .nav-links{
+        color: #fff;
+    }
 }
 
 /* dots */
@@ -216,7 +222,7 @@ body{
 .home{
     position: relative;
     width: 100%;
-    height:60vh;
+    height:68vh;
     left: 0;
     background: url('./images/homebackground.svg');
     background-repeat: no-repeat;
@@ -240,7 +246,7 @@ body{
 
 
 .texts{
-    margin-top: 20%;
+    margin-top: 30%;
     position: absolute;
 }
 
@@ -261,7 +267,7 @@ body{
 
 .mail-section{
     position: absolute;
-    margin-top: 46%;
+    margin-top: 56%;
 }
 
 .mail-section input{
@@ -463,6 +469,7 @@ body{
     color: #fff;
     cursor: pointer;
     transition: 0.5s;
+    z-index: 10;
 }
 
 
@@ -473,3 +480,198 @@ body{
 
 /* ==========================  */
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================  */
+/* ====( commen section )==== */
+/* ========================== */
+
+
+
+
+section{
+    position: relative;
+    height: 88vh;
+    width: 135vh;
+    margin-top: 9%;
+    margin-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1.25rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background-repeat: no-repeat;
+    background-size: 652px;
+   
+}
+
+
+
+
+/* ==========================  */
+/* ====( wallet section )==== */
+/* ========================== */
+
+
+
+
+.wallet{
+
+    background-color: rgba(239, 236, 254, 0.5);
+    background-image: image-set(url('./images/backdrops/wallet.png'));
+    background-position: right bottom;
+    
+}
+
+
+.wallet img{
+    position: absolute;
+    right: 20px;
+    bottom: 35px;
+    margin-right: 50px;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+
+
+/* ======= elements container ======= */
+
+
+
+.elements-container{
+    width: 75%;
+    height: 74vh;
+    margin-left: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+}
+
+
+/* ======= wlallet-icon======= */
+
+.wallet-icon{
+    padding: 1rem;
+    align-self: flex-start;
+    width: 130px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    background-color: rgb(239, 236, 254);
+    border-radius: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.wallet-icon .wallet-text{
+    margin-left: 18px;
+    color:  rgb(115, 73, 242);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.elements-container h1{
+     font-size: 2.5rem;
+     font-weight: 600;
+     color: rgb(115, 73, 242);
+}
+
+/* ======= about texts ======= */
+
+.about-container{
+    margin-top: 40px;
+}
+
+.about-container .active{
+    background-color: rgb(239, 236, 254);
+}
+
+.about-text{
+    width: 100%;
+    border: 1px solid rgb(222, 216, 253);
+    color: rgb(115, 73, 242);
+    background-color:rgb(247, 245, 255);
+    border-radius: 0.75rem;
+    margin-bottom: 0.75rem;
+    height: auto;
+    position: relative;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.about-text span{
+    /* margin: 0px; */
+    padding: 20px;
+    transition: color 0.25s;
+    display: flex;    
+}
+
+.about-text p{
+    margin-top: -20px;
+    width: 70%;
+    padding: 20px;
+}
+
+
+#click1{
+    display: flex
+}
+#click2{
+    display: none;
+}
+#click3{
+    display: none;
+}
+#click4{
+    display: none;
+}
+
+
+/* ======= get started button ======= */
+
+.getstarted-btn{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.getstarted-btn span{
+    padding: 18px 30px;
+    background-color: rgb(115, 73, 242);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+
+/* ==========================  */
+
+
+
+
+
+/* ============================  */
+/* ====( exchange section )==== */
+/* ============================ */
+
+.exchange{
+    background-image: image-set(url('./images/backdrops/exchange.png'));
+    background-position: left bottom 40px;
+    background-color: rgb(236, 245, 254, 0.5);
+}
+
+
+/* ==========================  */
