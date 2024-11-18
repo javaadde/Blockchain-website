@@ -492,9 +492,10 @@ body{
 
 
 
-/* ==========================  */
-/* ====( commen section )==== */
-/* ========================== */
+/*  ===================================  */
+/* =========( commen section )========== */
+/*  ===================================  */
+
 
 
 
@@ -503,7 +504,6 @@ section{
     position: relative;
     height: 88vh;
     width: 135vh;
-    margin-top: 9%;
     margin-bottom: 3%;
     margin-left: auto;
     margin-right: auto;
@@ -516,6 +516,50 @@ section{
     background-size: 652px;
    
 }
+
+
+
+.elements-container{
+    width: 75%;
+    height: 74vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+}
+
+
+
+
+.element-icon{
+    padding: 1rem;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    border-radius: 1.25rem;
+    margin-bottom: 20px;
+}
+
+
+
+.element-icon .element-txt{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+.elements-container h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+   
+}
+
+
+/*  ===================================  */
+/*  ===================================  */
+/*  ===================================  */
+
 
 
 
@@ -532,6 +576,7 @@ section{
     background-color: rgba(239, 236, 254, 0.5);
     background-image: image-set(url('./images/backdrops/wallet.png'));
     background-position: right bottom;
+    margin-top: 9%;
     
 }
 
@@ -549,60 +594,42 @@ section{
 
 /* ======= elements container ======= */
 
+#wallet-h1{
+    color: rgb(115, 73, 242);
+}
 
 
-.elements-container{
-    width: 75%;
-    height: 74vh;
+.cont-element-wallet{
     margin-left: 20%;
-    margin-top: auto;
-    margin-bottom: auto;
-    position: relative;
 }
 
 
 /* ======= wlallet-icon======= */
 
 .wallet-icon{
-    padding: 1rem;
-    align-self: flex-start;
     width: 130px;
-    align-items: center;
-    justify-content: center;
-    display: inline-flex;
     background-color: rgb(239, 236, 254);
-    border-radius: 1.25rem;
-    margin-bottom: 20px;
+
 }
 
 .wallet-icon .wallet-text{
-    margin-left: 18px;
     color:  rgb(115, 73, 242);
-    font-size: 18px;
-    font-weight: 500;
+    margin-left: 18px;
 }
 
-.elements-container h1{
-     font-size: 2.5rem;
-     font-weight: 600;
-     color: rgb(115, 73, 242);
-}
 
-/* ======= about texts ======= */
+
+/*  ===================================  */
+/* =======( about texts commen ) ======= */
+/*  ===================================  */
 
 .about-container{
     margin-top: 40px;
 }
 
-.about-container .active{
-    background-color: rgb(239, 236, 254);
-}
 
 .about-text{
     width: 100%;
-    border: 1px solid rgb(222, 216, 253);
-    color: rgb(115, 73, 242);
-    background-color:rgb(247, 245, 255);
     border-radius: 0.75rem;
     margin-bottom: 0.75rem;
     height: auto;
@@ -612,7 +639,6 @@ section{
 }
 
 .about-text span{
-    /* margin: 0px; */
     padding: 20px;
     transition: color 0.25s;
     display: flex;    
@@ -622,6 +648,19 @@ section{
     margin-top: -20px;
     width: 70%;
     padding: 20px;
+}
+
+/*  ===================================  */
+/*  ===================================  */
+
+
+
+/* =======( about texts for wallet) ======= */
+
+.about-text-wallet{
+    border: 1px solid rgb(222, 216, 253);
+    color: rgb(115, 73, 242);
+    background-color:rgb(247, 245, 255);
 }
 
 
@@ -638,32 +677,36 @@ section{
     display: none;
 }
 
+/* =====================================  */
+/* =======( bottom button commen )======= */
+/* ======================================  */
 
-/* ======= get started button ======= */
-
-.getstarted-btn{
+.bottom-btn{
     position: absolute;
     left: 0;
     bottom: 0;
 }
 
-.getstarted-btn span{
+.bottom-btn span{
     padding: 18px 30px;
-    background-color: rgb(115, 73, 242);
-    color: #fff;
     font-size: 1rem;
     font-weight: 500;
     border-radius: 10px;
 }
 
-
-/* ==========================  */
-
-
+/* ======================================  */
+/* ======================================  */
 
 
+/* =======( bottom button for wallet )======= */
 
-/* ============================  */
+
+.bottom-btn-wallet span{
+    background-color: rgb(115, 73, 242);
+    color: #fff;
+}
+
+/* ============================ */
 /* ====( exchange section )==== */
 /* ============================ */
 
@@ -671,6 +714,73 @@ section{
     background-image: image-set(url('./images/backdrops/exchange.png'));
     background-position: left bottom 40px;
     background-color: rgb(236, 245, 254, 0.5);
+    position: relative;
+
+}
+
+
+.exchange img{
+    position: absolute;
+    right: 55%;
+    bottom: 12%;
+   
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.cont-element-exchange{
+    margin-left: 100%;
+}
+
+
+.exchange-icon{
+    width: 160px;
+    background-color: rgb(236, 245, 254);
+    color: rgb(61, 137, 245);
+}
+
+
+.element-icon .exchange-txt{
+    margin-left: 10px;
+}
+
+
+#exchange-h1{
+    color: rgb(12, 108, 242);
+}
+
+
+
+.about-text-exchange{
+    background-color: rgb(236, 245, 254);
+    border-radius: 0.75rem;
+    border: 1px solid rgb(222, 216, 253);
+    color: rgb(12, 108, 242);
+}
+
+
+.bottom-btn-exchange span{
+    background-color: rgb(12, 108, 242);
+    color: #fff;
+}
+
+
+
+#Eclick1{
+    display: flex;
+}
+
+#Eclick2{
+    display: none;
+}
+
+#Eclick3{
+    display: none;
+}
+
+#Eclick4{
+    display: none;
 }
 
 
